@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D5666AC2200224E0032C83C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D5666AB2200224E0032C83C /* icon.png */; };
 		4D9FB6BA21F9AB8B00C24184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9FB6B921F9AB8B00C24184 /* AppDelegate.swift */; };
 		4D9FB6BC21F9AB8B00C24184 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9FB6BB21F9AB8B00C24184 /* ViewController.swift */; };
 		4D9FB6BF21F9AB8B00C24184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9FB6BD21F9AB8B00C24184 /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		4D9FB6C421F9AB8C00C24184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9FB6C221F9AB8C00C24184 /* LaunchScreen.storyboard */; };
 		4D9FB6CF21F9AB8D00C24184 /* Bmi_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9FB6CE21F9AB8D00C24184 /* Bmi_CalculatorTests.swift */; };
 		4D9FB6DA21F9AB8D00C24184 /* Bmi_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9FB6D921F9AB8D00C24184 /* Bmi_CalculatorUITests.swift */; };
+		4D9FB6F321F9B8B200C24184 /* fat.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9FB6EF21F9B8B200C24184 /* fat.png */; };
+		4D9FB6F421F9B8B200C24184 /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9FB6F021F9B8B200C24184 /* normal.png */; };
+		4D9FB6F521F9B8B200C24184 /* Obese.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9FB6F121F9B8B200C24184 /* Obese.png */; };
+		4D9FB6F621F9B8B200C24184 /* underweight.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9FB6F221F9B8B200C24184 /* underweight.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D5666AB2200224E0032C83C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		4D9FB6B621F9AB8B00C24184 /* Bmi Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bmi Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9FB6B921F9AB8B00C24184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D9FB6BB21F9AB8B00C24184 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,10 @@
 		4D9FB6D521F9AB8D00C24184 /* Bmi CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bmi CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9FB6D921F9AB8D00C24184 /* Bmi_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bmi_CalculatorUITests.swift; sourceTree = "<group>"; };
 		4D9FB6DB21F9AB8D00C24184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D9FB6EF21F9B8B200C24184 /* fat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fat.png; sourceTree = "<group>"; };
+		4D9FB6F021F9B8B200C24184 /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
+		4D9FB6F121F9B8B200C24184 /* Obese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Obese.png; sourceTree = "<group>"; };
+		4D9FB6F221F9B8B200C24184 /* underweight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = underweight.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,11 @@
 				4D9FB6B921F9AB8B00C24184 /* AppDelegate.swift */,
 				4D9FB6BB21F9AB8B00C24184 /* ViewController.swift */,
 				4D9FB6BD21F9AB8B00C24184 /* Main.storyboard */,
+				4D5666AB2200224E0032C83C /* icon.png */,
+				4D9FB6EF21F9B8B200C24184 /* fat.png */,
+				4D9FB6F021F9B8B200C24184 /* normal.png */,
+				4D9FB6F121F9B8B200C24184 /* Obese.png */,
+				4D9FB6F221F9B8B200C24184 /* underweight.png */,
 				4D9FB6C021F9AB8C00C24184 /* Assets.xcassets */,
 				4D9FB6C221F9AB8C00C24184 /* LaunchScreen.storyboard */,
 				4D9FB6C521F9AB8C00C24184 /* Info.plist */,
@@ -230,6 +245,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D9FB6C421F9AB8C00C24184 /* LaunchScreen.storyboard in Resources */,
+				4D9FB6F421F9B8B200C24184 /* normal.png in Resources */,
+				4D9FB6F521F9B8B200C24184 /* Obese.png in Resources */,
+				4D9FB6F321F9B8B200C24184 /* fat.png in Resources */,
+				4D5666AC2200224E0032C83C /* icon.png in Resources */,
+				4D9FB6F621F9B8B200C24184 /* underweight.png in Resources */,
 				4D9FB6C121F9AB8C00C24184 /* Assets.xcassets in Resources */,
 				4D9FB6BF21F9AB8B00C24184 /* Main.storyboard in Resources */,
 			);
@@ -439,7 +459,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Patcharapol.Bmi-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.patcharapol.Bmi-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,7 +477,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Patcharapol.Bmi-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.patcharapol.Bmi-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

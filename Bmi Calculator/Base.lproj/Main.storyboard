@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,100 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bmi_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eck-mn-qmA">
+                                <rect key="frame" x="68" y="80" width="239" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Wnk-QM-gH5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byH-8v-0pM">
+                                <rect key="frame" x="50" y="415" width="275" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your height (cm)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5Q-jD-FCh">
+                                <rect key="frame" x="50" y="435" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your weight (Kg)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfx-7I-iow">
+                                <rect key="frame" x="50" y="481" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oCh-2V-IoZ">
+                                <rect key="frame" x="218" y="430" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4M8-F8-scR">
+                                <rect key="frame" x="217" y="480" width="98" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWf-b5-Cdk">
+                                <rect key="frame" x="150" y="540" width="75" height="30"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ooC-di-Syj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI calculator!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1a-cq-MBQ">
+                                <rect key="frame" x="20" y="357" width="335" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CWf-b5-Cdk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="0zj-sD-anb"/>
+                            <constraint firstItem="M5Q-jD-FCh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="3AZ-aK-QaT"/>
+                            <constraint firstItem="byH-8v-0pM" firstAttribute="top" secondItem="Q1a-cq-MBQ" secondAttribute="bottom" constant="33" id="8RP-Au-BCN"/>
+                            <constraint firstItem="oCh-2V-IoZ" firstAttribute="top" secondItem="byH-8v-0pM" secondAttribute="bottom" constant="15" id="8lO-xU-jBX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4M8-F8-scR" secondAttribute="trailing" constant="60" id="9YZ-JM-VLE"/>
+                            <constraint firstItem="4M8-F8-scR" firstAttribute="leading" secondItem="hfx-7I-iow" secondAttribute="trailing" constant="40" id="AV9-jw-qVo"/>
+                            <constraint firstItem="Q1a-cq-MBQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CkI-6R-efA"/>
+                            <constraint firstItem="hfx-7I-iow" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="F3y-2W-ujI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oCh-2V-IoZ" secondAttribute="trailing" constant="60" id="Mje-f7-dcm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eck-mn-qmA" secondAttribute="trailing" constant="68" id="Onp-As-mkw"/>
+                            <constraint firstItem="CWf-b5-Cdk" firstAttribute="top" secondItem="4M8-F8-scR" secondAttribute="bottom" constant="30" id="Pxw-0O-kwG"/>
+                            <constraint firstItem="oCh-2V-IoZ" firstAttribute="leading" secondItem="M5Q-jD-FCh" secondAttribute="trailing" constant="40" id="QiQ-sb-Prn"/>
+                            <constraint firstItem="eck-mn-qmA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="WMO-Ie-Ctw"/>
+                            <constraint firstItem="M5Q-jD-FCh" firstAttribute="top" secondItem="byH-8v-0pM" secondAttribute="bottom" constant="20" id="Yfw-ci-MM5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q1a-cq-MBQ" secondAttribute="trailing" constant="20" id="bcq-ko-QOd"/>
+                            <constraint firstItem="byH-8v-0pM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="cf6-Yi-FQa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CWf-b5-Cdk" secondAttribute="trailing" constant="150" id="ddA-3M-hDM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="byH-8v-0pM" secondAttribute="trailing" constant="50" id="eJi-by-M9p"/>
+                            <constraint firstItem="Q1a-cq-MBQ" firstAttribute="top" secondItem="eck-mn-qmA" secondAttribute="bottom" constant="77" id="lQ5-Hy-Io4"/>
+                            <constraint firstItem="hfx-7I-iow" firstAttribute="top" secondItem="M5Q-jD-FCh" secondAttribute="bottom" constant="25" id="mdh-XD-EeB"/>
+                            <constraint firstItem="byH-8v-0pM" firstAttribute="top" secondItem="Q1a-cq-MBQ" secondAttribute="bottom" constant="30" id="pS8-8H-V5A"/>
+                            <constraint firstItem="4M8-F8-scR" firstAttribute="top" secondItem="oCh-2V-IoZ" secondAttribute="bottom" constant="20" id="xKi-rK-oHH"/>
+                            <constraint firstItem="eck-mn-qmA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="y7p-qu-zJf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bmi" destination="Q1a-cq-MBQ" id="prG-VP-99n"/>
+                        <outlet property="heightField" destination="oCh-2V-IoZ" id="lfP-v0-3t5"/>
+                        <outlet property="imageResult" destination="eck-mn-qmA" id="DBS-W7-AsG"/>
+                        <outlet property="result" destination="byH-8v-0pM" id="sRN-jf-jEd"/>
+                        <outlet property="weightField" destination="4M8-F8-scR" id="x5b-Gf-4p7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="11.244377811094454"/>
         </scene>
     </scenes>
 </document>
